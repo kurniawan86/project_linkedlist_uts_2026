@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tambah User</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex">
+
+    <!-- Sidebar -->
+    {{ template "sidebar" . }}
+
+    <div class="flex-1 flex flex-col">
+
+        <!-- Topbar -->
+        {{ template "topbar" . }}
+
+        <!-- Content -->
+        <main class="p-10">
+
+            <h1 class="text-2xl font-bold mb-6">Tambah User</h1>
+
+            <form action="/users/store" method="POST" class="bg-white p-6 rounded shadow max-w-md">
+
+                <div class="mb-4">
+                    <label class="block text-sm mb-2">Nama</label>
+                    <input type="text" name="nama"
+                        class="w-full border px-3 py-2 rounded"
+                        required>
+                </div>
+
+                <div class="mb-4">
+                    <label class="block text-sm mb-2">Role</label>
+                    <select name="role" class="w-full border px-3 py-2 rounded">
+                        <option value="admin">Admin</option>
+                        <option value="kasir">Kasir</option>
+                        <option value="pelanggan">Pelanggan</option>
+                    </select>
+                </div>
+
+                <div class="flex justify-between">
+                    <a href="/users" class="text-gray-600">← Kembali</a>
+
+                    <button type="submit"
+                        class="bg-blue-600 text-white px-4 py-2 rounded">
+                        Simpan
+                    </button>
+                </div>
+
+            </form>
+
+        </main>
+    </div>
+
+</body>
+</html>

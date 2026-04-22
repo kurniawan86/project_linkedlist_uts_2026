@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 flex items-center justify-center min-h-screen font-sans text-gray-800">
+
+    <div class="w-full max-w-sm px-6">
+
+        <div class="mb-10 text-center">
+            <h1 class="text-3xl font-bold mb-2 text-gray-900">Masuk</h1>
+            <p class="text-gray-500 text-sm">Silakan masukkan nama user dan password</p>
+        </div>
+
+        <form action="/login-process" method="POST" class="space-y-6">
+
+            <div>
+                <label for="namauser" class="block mb-2 text-sm font-medium text-gray-700">Nama User</label>
+                <input id="namauser" name="namauser" type="text" required
+                    class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    placeholder="Masukkan nama user">
+            </div>
+
+            <div>
+                <div class="flex justify-between items-center mb-2">
+                    <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+                    <a href="#" class="text-xs font-medium text-blue-600 hover:text-blue-500">Lupa sandi?</a>
+                </div>
+                <input id="password" name="password" type="password" required
+                    class="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                    placeholder="Masukkan password">
+            </div>
+
+            <div class="pt-4">
+                <button type="submit"
+                    class="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                    Masuk
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+[
+  {
+    "IdUser": 1,
+    "NamaUser": "Siti",
+    "DateCreated": "2026-04-07 02:00",
+    "DateUpdated": "",
+    "Role": "admin"
+  },
+  {
+    "IdUser": 2,
+    "NamaUser": "Kurniawan",
+    "DateCreated": "2026-04-07 02:00",
+    "DateUpdated": "",
+    "Role": "kasir"
+  },
+  {
+    "IdUser": 3,
+    "NamaUser": "Andi",
+    "DateCreated": "2026-04-07 02:03",
+    "DateUpdated": "",
+    "Role": "pelanggan"
+  },
+  {
+    "IdUser": 7,
+    "NamaUser": "hudan",
+    "DateCreated": "2026-04-22 14:19",
+    "DateUpdated": "",
+    "Role": "pelanggan"
+  },
+  {
+    "IdUser": 8,
+    "NamaUser": "vio",
+    "DateCreated": "2026-04-22 14:33",
+    "DateUpdated": "",
+    "Role": "kasir"
+  }
+]
